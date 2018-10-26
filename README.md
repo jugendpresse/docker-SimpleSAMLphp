@@ -1,0 +1,1 @@
+# SimpleSAMLphp Docker image
