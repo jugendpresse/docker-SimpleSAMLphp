@@ -4,6 +4,7 @@ MAINTAINER Martin Winter <m.winter@jugendpresse.de>
 ENV APACHE_WORKDIR="/var/www/simplesamlphp"
 
 RUN wget 'https://simplesamlphp.org/download?latest' -O /tmp/simplesamlphp.tar.gz
+RUN mkdir $APACHE_WORKDIR
 RUN tar xfz /tmp/simplesamlphp.tar.gz --strip=1 -C $APACHE_WORKDIR
 RUN rm -f /tmp/simplesamlphp.tar.gz
 
