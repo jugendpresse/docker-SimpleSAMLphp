@@ -42,7 +42,7 @@ node {
     }
 
     if ( old_layers != new_layers ) {
-        stage('Push develop image') {
+        stage('Push image') {
             /* Finally, we'll push the image with two tags:
              * First, the date of the build
              * Second, the 'latest' tag.
